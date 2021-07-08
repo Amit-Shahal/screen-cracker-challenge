@@ -16,11 +16,11 @@ interface CircularProgressProps {
 export default function CirculeProgressBar({
   progress,
 }: CircularProgressProps) {
-  const alfa = interpolate(progress, 
-    inputRange: [0, 1],
-    outange: [0, Math.PI * 2],
-  );
-  const strokeDashoffset = multiply(alfa, radius);
+  // const alfa = interpolate(progress, 
+  //   inputRange: [0, 1],
+  //   outange: [0, Math.PI * 2],
+  // );
+  // const strokeDashoffset = multiply(alfa, radius);
   return (
     <Svg width={size} height={size}>
       <Circle
